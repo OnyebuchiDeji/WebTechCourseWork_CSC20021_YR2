@@ -1,0 +1,235 @@
+
+:root
+{
+    /* Global Variables */
+    --backgroundColor: rgb(23, 23, 23);
+    --mainHeaderCol: azure;
+    --mainHeaderBGCol: rgb(27, 27, 27);
+
+}
+
+
+/****************************************************
+*****************************************************
+    LIST PAGE SCRIPT STYLING
+*****************************************************
+****************************************************/
+
+article :nth-child(n)
+{
+    margin: min(105, 25px);
+}
+
+article button
+{
+    /* box-shadow: 2px 5px 5px grey; */
+    /* font-family: Helvetica; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family: Verdana, sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+article h2
+{
+    font-size: 2rem;
+}
+
+article h4
+{
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+div.list_library_records
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+
+    gap: 2%;
+    width: 100%;
+    /* height: 60svh; */
+    margin: min(10%, 25px);
+}
+
+
+div.record_data
+{
+    width: 100%;
+    box-shadow: 2px 2px 8px gainsboro;
+    margin: min(5%, 15px);
+}
+
+div.record_data:hover
+{
+    box-shadow: 2px 2px 15px silver;
+}
+
+div.record_data p
+{
+    margin: min(5%, 15px) min(10%, 25px);
+}
+
+div.record_control_buttons
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+    padding: 5% 10%;
+}
+
+div.record_control_buttons button
+{
+    background-color: rgba(0, 0, 0, 0);
+
+    /* font-style:oblique; */
+    border: none;
+    text-decoration: none;
+    color: grey;
+}
+div.record_control_buttons button:hover
+{
+    /* background-color: rgba(0, 0, 0, 0); */
+    /* text-shadow: 2px 2px silver; */
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+button.toggle_button
+{
+    box-shadow: 2px 2px 15px grey;
+}
+
+button.toggle_button:hover
+{
+    box-shadow: 2px 2px 8px silver;
+}
+
+form.record_form
+{
+    inset: min(30%, 150px) 0px 0px min(20%, 55px);
+    /* inset: min(30%, 150px) 0px 0px auto; */
+    box-sizing: border-box;
+    position: fixed;
+    /* inset: min(30%, 150px) 50% 0px 0px; */
+    border: 3px solid black;
+    box-shadow: 2px 2px 8px gray;
+    width: 85%;
+    height: 70%;
+    background-color: rgb(12, 12, 12);
+    opacity: 95%;
+    color: whitesmoke;
+    z-index: 150;
+    text-align: center;
+}
+
+form.record_form .form_header
+{
+    display: grid;
+    grid-template-columns: 0.9fr 0.1fr;
+    width: 100%;
+}
+
+
+form.record_form .form_header h2
+{
+    font-size: 1.5rem;
+}
+
+form.record_form .form_header button
+{
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 2rem;
+}
+
+form.record_form div.form_element
+{
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    margin: min(10%, 25px);
+    height: min(15%, 20px);
+    max-height: min(20%, 250px);
+}
+form.record_form div.form_element input
+{
+    height: min(70%, 350px);
+    text-decoration: solid;
+    font-style: normal;
+    font-weight: 700;
+    background-color: rgb(24,24,24);
+    /* opacity: 100%; */
+    color: whitesmoke;
+}
+form.record_form div.form_element select
+{
+    background-color: rgb(24,24,24);
+    color: whitesmoke;
+}
+
+/* button{
+    margin: 0px 0px min(20%, 55px) 0px;
+} */
+
+
+/****************************************************
+*****************************************************
+    DISPLAY PAGE SCRIPT STYLING
+*****************************************************
+****************************************************/
+
+
+div#library_record_details
+{
+    display: block;
+    box-sizing: border-box;
+    width: 90%;
+
+    background-color: var(--backgroundColor);
+    color: lightgray;
+    box-shadow: 2px 2px 8px grey;
+    text-align: center;
+    
+    margin: 10% auto;
+    padding: 2% 0px 5% 0px;
+}
+
+div#library_record_details:hover
+{
+    box-shadow: 2px 2px 15px silver;
+}
+
+div#library_record_details h2
+{
+    /* width: 100%; */
+    font-size: 2rem;
+    /* margin: 12%; */
+    text-align: center;
+}
+
+div#library_record_details h4
+{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 2% 5%;
+}
+div#library_record_details p
+{
+    /* text-align: left; */
+    justify-content: left;
+    margin: 2% 5%;
+    font-size: 1.5rem;
+}
+
+article a
+{
+    font-size: 1.2rem;
+    margin: 5% auto;
+}
+
+article a.back_link
+{
+    font-size: 1.7rem;
+}

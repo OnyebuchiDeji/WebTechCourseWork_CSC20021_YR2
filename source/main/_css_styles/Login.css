@@ -1,0 +1,104 @@
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar
+{
+    display: none;
+    width: 0;
+}
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+
+div#login_card
+{
+    display: block;
+    box-sizing: border-box;
+    margin: min(25%, 150px) auto;
+    max-width: 85%;
+    min-height: 75svh;
+    /* max-height: 60svh; */
+    box-shadow: 2px 2px 8px grey;
+    padding: min(10%, 35px) min(15%, 25px);
+    /* align-content: center; */
+}
+div#login_card :nth-child(n)
+{
+    width:100%;
+    margin: 1.2% 0%;
+}
+
+div#login_card:hover
+{
+    box-shadow: 2px 2px 15px silver;
+}
+
+
+div#login_card h2
+{
+    text-align: center;
+    font-size: 2.5rem;    
+    margin: 0px 0px 10% 0px;
+}
+
+
+div#login_card p
+{
+    font-size: 1.0rem;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    margin: 0px 0px 5% 0px;
+}
+
+div#login_card form
+{
+    /* height: 75%;    */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 15%;
+}
+div#login_card form .form_element
+{
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    gap: 0.2%;
+    margin:0px;
+    padding: 0px;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+div#login_card form.details_form div.form_element label
+{
+    margin: auto;
+    font-size: 0.8rem;
+}
+
+div#login_card form.details_form div.form_element input
+{
+    width: 100%;
+    /* height: 100%; */
+    height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+div#login_card form.details_form input.details_form_button
+{
+    width: min(30%, 75px);
+    margin: auto;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,20 @@
+{
+    "0000001": {
+        "title": "Stephen King's Nightmares and Dreamscapes",
+        "description": "A book exploring different realities and characters by Stephen King",
+        "category": "Literature",
+        "module_code": "OTHER"
+    },
+    "0000002": {
+        "title": "Learn Opengl",
+        "description": "Introduction to Opengl and a deep dive.",
+        "category": "Computing",
+        "module_code": "CSC"
+    },
+    "0000003": {
+        "title": "Learn C++",
+        "description": "Deep dive into C++ from beginner's level",
+        "category": "Computing",
+        "module_code": "CSC"
+    }
+}
